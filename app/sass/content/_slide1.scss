@@ -1,0 +1,113 @@
+.header {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: transparent;
+  &__wrapper {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    &__logo {
+      display: block;
+      position: absolute;
+      top: 41px;
+      left: 104px;
+      z-index: 9999;
+    }
+    &__menu {
+      display: block;
+      position: absolute;
+      top: 36px;
+      left: 44px;
+      z-index: 9999;
+      margin-right: 28px;
+    }
+  }
+}
+
+.slide1 {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  h1 {
+    color: #212222;
+    z-index: 9999;
+    font-family: $QanelasBlack;
+    font-size: 57px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 101px;
+    //margin-bottom: 34px;
+  }
+  p {
+    width: 550px;
+    color: #212222;
+    font-family: $QanelasMedium;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    margin: 34px 101px;
+  }
+  form {
+    margin-left: 101px;
+    input {
+      border-radius: 22px;
+      border: 1px solid #a2a2a2;
+      background-color: #ffffff;
+      width: 249px;
+      height: 44px;
+      padding-left: 26px;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      font-size: 12px;
+      font-weight: 300;
+      &::placeholder {
+
+        opacity: 1;
+      }
+
+    }
+    button {
+      width: 250px;
+      border: none;
+      height: 44px;
+      border-radius: 22px;
+      background-color: #ff5038;
+      background-image: linear-gradient(-11deg, #f94200 0%, #f94200 2%, #fd8000 100%);
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      margin-left: 14px;
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.absolute-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.absolute-left {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 35px;
+  top: calc(50% - 200px);
+}
+
+#fp-nav.right {
+  right: 40px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #742f72;
+}

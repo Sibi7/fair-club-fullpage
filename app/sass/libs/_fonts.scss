@@ -1,5 +1,111 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,900&subset=cyrillic');
+
+$QanelasBlack: 'QanelasBlack';
+$QanelasBold: 'QanelasBold';
+$QanelasExtraBold: 'QanelasExtraBold';
+$QanelasHeavy: 'QanelasHeavy';
+$QanelasLight: 'QanelasLight';
+$QanelasMedium: 'QanelasMedium';
+$QanelasRegular: 'QanelasRegular';
+$QanelasSemiBold: 'QanelasSemiBold';
+$QanelasThin: 'QanelasThin';
+$QanelasUltraLight: 'QanelasUltraLight';
+
+
+@font-face {
+  font-family: 'QanelasBlack';
+  src: url('../fonts/Qanelas/QanelasBlack.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasBlack.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasBlack.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasBlack.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'QanelasBold';
+  src: url('../fonts/Qanelas/QanelasBold.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasBold.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasBold.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QanelasExtraBold';
+  src: url('../fonts/Qanelas/QanelasExtraBold.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasExtraBold.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasExtraBold.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasExtraBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QanelasHeavy';
+  src: url('../fonts/Qanelas/QanelasHeavy.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasHeavy.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasHeavy.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasHeavy.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QanelasLight';
+  src: url('../fonts/Qanelas/QanelasLight.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasLight.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasLight.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasLight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QanelasMedium';
+  src: url('../fonts/Qanelas/QanelasMedium.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasMedium.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasMedium.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasMedium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'QanelasRegular';
+  src: url('../fonts/Qanelas/QanelasRegular.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasRegular.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasRegular.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasRegular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'QanelasSemiBold';
+  src: url('../fonts/Qanelas/QanelasSemiBold.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasSemiBold.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasSemiBold.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasSemiBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'QanelasSemiBold';
+  src: url('../fonts/Qanelas/QanelasThin.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasThin.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasThin.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasThin.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'QanelasUltraLight';
+  src: url('../fonts/Qanelas/QanelasUltraLight.eot');
+  src: local('☺'), url('../fonts/Qanelas/QanelasUltraLight.woff')
+  format('woff'), url('../fonts/Qanelas/QanelasUltraLight.ttf')
+  format('truetype'), url('../fonts/Qanelas/QanelasUltraLight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
