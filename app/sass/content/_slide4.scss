@@ -1,0 +1,56 @@
+.slide4 {
+  display: block;
+  position: relative;
+  width: 100%;
+  &__right-block {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-left: 102px;
+    h1 {
+      color: #212222;
+      margin-top: 93px;
+      font-family: $QanelasBold;
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 33px;
+      text-transform: uppercase;
+      margin-bottom: 34px;
+    }
+    p {
+      width: 472px;
+      color: #212222;
+      font-size: 17px;
+      font-family: $QanelasMedium;
+      font-weight: 500;
+      span {
+        font-family: $QanelasBold;
+        font-weight: 700;
+      }
+    }
+    button{
+      width: 210px;
+      height: 44px;
+      border-radius: 22px;
+      background-color: #ff5038;
+      background-image: linear-gradient(-11deg, #f94200 0%, #f94200 2%, #fd8000 100%);
+      border: none;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-top: 24px;
+    }
+  }
+
+}
+
+.s4-absolute-right {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}
