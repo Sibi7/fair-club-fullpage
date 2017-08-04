@@ -6,7 +6,7 @@
     display: block;
     position: relative;
     float: right;
-    width: 50%;
+    width: calc(100% - (43% + 85px));
     margin-right: 85px;
     h1 {
       color: #212222;
@@ -18,7 +18,7 @@
       margin-bottom: 34px;
     }
     p {
-      width: 472px;
+      width: 100%;
       color: #212222;
       font-size: 17px;
       font-family: $QanelasMedium;
@@ -52,4 +52,11 @@
   z-index: -1;
   left: 0;
   bottom: 0;
+  width: 43%;
+  height: 80%;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
