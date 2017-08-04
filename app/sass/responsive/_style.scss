@@ -1,86 +1,13 @@
 @media only screen and (max-width: 1370px) {
-  //.s4-absolute-right{
-  //  img{
-  //    width: 110%;
-  //  }
-  //}
-  //.s3-absolute-left{
-  //  img{
-  //    width: 110%;
-  //  }
-  //}
-  .slide2 .item-wrap {
-    width: 979px;
-  }
-  .slide2 .item-wrap__item {
-    width: 33%;
-  }
-  .slide2 .item-wrap__item p {
-    padding: 0 30px;
-    box-sizing: border-box;
-    width: 100%;
-  }
+
 
 }
 @media only screen and (max-width: 1200px){
-  .s4-absolute-right{
-    img{
-      width: 96%;
-    }
-  }
-  .s3-absolute-left{
-    img{
-      width: 96%;
-    }
-  }
+
+
 }
 @media only screen and (max-width: 1024px) {
-  .slide1 h1 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .absolute-right{
-    img{
-      height: 318px;
-    }
 
-  }
-  .slide2 p {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .slide2 .item-wrap {
-    width: 100%;
-  }
-  .slide3__right-block {
-    float: right;
-    width: 76%;
-    margin-right: 85px;
-  }
-  .slide3__right-block button {
-    display: block;
-    margin: 0 auto;
-  }
-  .s3-absolute-left img, .s4-absolute-right img {
-    width: 50%;
-  }
-  .slide4__right-block {
-    float: left;
-    width: calc(88% - 102px);
-  }
-  .slide4__right-block h1 {
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 33px;
-    text-transform: uppercase;
-    margin-bottom: 34px;
-  }
-  .s4-absolute-right {
-    right: -297px;
-  }
-  .slide5__content {
-    width: 576px;
-  }
 }
 
 @media only screen and (max-width: 980px) {
@@ -88,56 +15,11 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .s3-absolute-left {
-    width: 43%;
-    height: auto;
-    overflow: hidden;
-  }
-  .s4-absolute-right {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 100%;
-    right: -382px;
-    height: auto;
-    overflow: hidden;
-  }
+
 }
 
 @media only screen and (max-width: 736px) {
-  .absolute-right img {
-    display: none;
-  }
-  .slide1 h1 {
-    font-size: 25px;
-  }
-  .slide1 p {
-    width: 100%;
-    margin: 34px 0;
-  }
-  .header__wrapper__menu {
-    left: 15px;
-  }
-  .header__wrapper__logo {
-    top: 41px;
-    left: 69px;
-  }
-  .slide1 form input {
-    border-radius: 22px;
-    border: 1px solid #a2a2a2;
-    background-color: #fff;
-    width: 249px;
-    display: block;
-    margin: auto;
-  }
-  .slide1 form button {
-    margin: 20px auto;
-    display: block;
-  }
-  .slide1 form {
-    margin-left: 0;
-  }
+
 }
 
 @media only screen and (max-width: 500px) {

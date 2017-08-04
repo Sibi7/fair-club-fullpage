@@ -3,59 +3,87 @@
   position: relative;
   float: left;
   width: 100%;
-  h1 {
-    color: #212222;
-    z-index: 9999;
-    font-family: $QanelasBlack;
-    font-size: 57px;
-    font-weight: 900;
-    margin: 0;
-    text-transform: uppercase;
+  &__wrapper {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(100% - (520px + 101px));
     margin-left: 101px;
-    //margin-bottom: 34px;
-  }
-  p {
-    width: 550px;
-    color: #212222;
-    font-family: $QanelasMedium;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 23px;
-    margin: 34px 101px;
-  }
-  form {
-    margin-left: 101px;
-    input {
-      border-radius: 22px;
-      border: 1px solid #a2a2a2;
-      background-color: #ffffff;
-      width: 249px;
-      height: 44px;
-      padding-left: 26px;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-      font-style: italic;
-      font-size: 12px;
-      font-weight: 300;
-      &::placeholder {
-
-        opacity: 1;
-      }
-
+    @include breakpoint(max-width 992px) {
+      width: calc(100% - (420px + 15px));
+      margin-left: 15px;
     }
-    button {
-      width: 250px;
-      border: none;
-      height: 44px;
-      border-radius: 22px;
-      background-color: #ff5038;
-      background-image: linear-gradient(-11deg, #f94200 0%, #f94200 2%, #fd8000 100%);
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-      margin-left: 14px;
-      font-size: 15px;
+    @include breakpoint(max-width 660px) {
+      width: calc(100% - (15px * 2));
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    h1 {
+      color: #212222;
+      z-index: 9999;
+      font-family: $QanelasBlack;
+      font-size: 57px;
       font-weight: 900;
+      margin: 0;
       text-transform: uppercase;
+      @include breakpoint(max-width 1024px) {
+        font-size: 34px;
+      }
+      @include breakpoint(max-width 992px) {
+        font-size: 22px;
+        margin-top: 10px;
+      }
+    }
+    p {
+      width: 100%;
+      color: #212222;
+      font-family: $QanelasMedium;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 23px;
+      margin: 34px 0;
+    }
+    form {
+      /*margin-left: 101px;*/
+      input {
+        border-radius: 22px;
+        border: 1px solid #a2a2a2;
+        background-color: #ffffff;
+        width: 249px;
+        height: 44px;
+        padding-left: 26px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        font-weight: 300;
+        @include breakpoint(max-width 1024px) {
+          width: 100%;
+        }
+        &::placeholder {
+          opacity: 1;
+        }
+
+      }
+      button {
+        width: 250px;
+        border: none;
+        height: 44px;
+        border-radius: 22px;
+        background-color: #ff5038;
+        background-image: linear-gradient(-11deg, #f94200 0%, #f94200 2%, #fd8000 100%);
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 14px;
+        font-size: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+        @include breakpoint(max-width 1024px) {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
     }
   }
 }
@@ -63,8 +91,20 @@
 .absolute-right {
   display: block;
   position: absolute;
+  width: 520px;
+  height: 575px;
   right: 0;
   bottom: 0;
+  @include breakpoint(max-width 992px) {
+    width: 420px;
+    height: 475px;
+  }
+  @include breakpoint(max-width 660px) {
+    display: none;
+  }
+  img {
+    size: 100%;
+  }
 }
 
 .absolute-left {

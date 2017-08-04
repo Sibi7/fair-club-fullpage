@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $('#fullpage').fullpage({
         menu: '#menu',
         lockAnchors: true,
@@ -11,11 +12,13 @@ $(document).ready(function() {
         slidesNavPosition: 'bottom',
         verticalCentered: true
     });
+    
     $('.tabs ul li').click(function () {
         $('.tabs ul li').addClass('active')
-
     })
+    
 });
+
 (function($){
     jQuery.fn.lightTabs = function(options){
 
@@ -30,13 +33,12 @@ $(document).ready(function() {
                 $(tabs).children("ul").children("li").eq(i).addClass("active");
             }
 
-            showPage(0);
+            showPage(1);
 
             $(tabs).children("ul").children("li").each(function(index, element){
                 $(element).attr("data-page", i);
                 i++;
             });
-
             $(tabs).children("ul").children("li").click(function(){
                 showPage(parseInt($(this).attr("data-page")));
             });
