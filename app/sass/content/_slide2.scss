@@ -1,9 +1,9 @@
-.slide2{
+.slide2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  p{
+  p {
     width: 880px;
     color: #212222;
     font-family: $QanelasRegular;
@@ -12,8 +12,16 @@
     line-height: 20px;
     margin-bottom: 28px;
     margin-top: 60px;
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+      padding: 0 30px;
+      @include box-sizing(border-box)
+    }
+    @include breakpoint(max-width 600px) {
+      font-size: 13px;
+    }
   }
-  ul{
+  ul {
     padding: 0;
     list-style: none;
     width: 544px;
@@ -23,12 +31,17 @@
     border: 2px solid #eeeeee;
     display: flex;
     justify-content: space-around;
-    .active{
+    @include breakpoint(max-width 600px) {
+      width: 100%;
+      @include flex-direction(column);
+      margin-top: 10px;
+    }
+    .active {
       background-color: #eeeeee;
       color: #212121;
       border-radius: 19px;
     }
-    li{
+    li {
       width: 33.33%;
       display: inline-block;
       text-align: center;
@@ -41,16 +54,37 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       box-sizing: border-box;
+      @include breakpoint(max-width 600px) {
+        width: 100%;
+      }
     }
   }
-  .item-wrap{
+  .item-wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
     width: 870px;
-    &__item{
+    @include breakpoint(max-width 770px) {
+      width: 100%;
+      /*padding: 0 30px;*/
+      @include box-sizing(border-box)
+    }
+    @include breakpoint(max-width 600px) {
+      width: 100%;
+      @include flex-direction(column);
+      margin-top: 10px;
+    }
+    &__item {
       width: 225px;
-      h1{
+      @include breakpoint(max-width 600px) {
+        width: 100%;
+      }
+      img {
+        @include breakpoint(max-width 600px){
+          size: 30px;
+        }
+      }
+      h1 {
         color: #212121;
         margin-top: 23px;
         font-family: $QanelasBlack;
@@ -60,15 +94,22 @@
         text-transform: uppercase;
         margin-bottom: 0;
         letter-spacing: 2px;
+        @include breakpoint(max-width 600px) {
+          width: 100%;
+        }
       }
-      p{
+      p {
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
         width: 238px;
         margin-top: 23px;
-
+        @include breakpoint(max-width 600px) {
+          width: 100%;
+          @include flex-direction(column);
+          margin-top: 10px;
+        }
       }
     }
   }

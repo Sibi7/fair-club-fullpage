@@ -33,6 +33,10 @@
         font-size: 22px;
         margin-top: 10px;
       }
+      @include breakpoint(max-width 600px) {
+        font-size: 22px;
+        margin-top: 40px;
+      }
     }
     p {
       width: 100%;

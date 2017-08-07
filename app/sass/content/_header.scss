@@ -17,6 +17,11 @@
       top: 41px;
       left: 104px;
       z-index: 9999;
+      @include breakpoint(max-width 600px) {
+        width: calc(100% - 32px);
+        top: 25px;
+        left: 76px;
+      }
     }
     &__menu {
       display: block;
@@ -25,6 +30,10 @@
       left: 44px;
       z-index: 9999;
       margin-right: 28px;
+      @include breakpoint(max-width 600px) {
+        top: 20px;
+        left: 31px;
+      }
     }
   }
 }

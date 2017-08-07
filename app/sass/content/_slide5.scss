@@ -9,10 +9,21 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    @include breakpoint(max-width 600px){
+      width: 100%;
+      @include flex-direction(column);
+      margin-top: 86px;
+    }
     &__item{
       width: 212px;
+      @include breakpoint(max-width 600px){
+        width: 100%;
+      }
       &:last-child{
         width: 315px;
+        @include breakpoint(max-width 600px){
+          width: 100%;
+        }
         h1{
           margin-bottom: 13px;
         }
@@ -49,6 +60,9 @@
           max-height: 95px;
           border-radius: 5px;
           border: 1px solid #6f6f6f;
+          @include breakpoint(max-width 600px){
+            height: 35px;
+          }
           &::placeholder{
             font-weight: 400;
           }
@@ -79,6 +93,13 @@
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 16px;
+        @include breakpoint(max-width 600px){
+          width: 100%;
+          padding-left: 30px;
+          line-height: 16px;
+          margin-bottom: 20px;
+          @include box-sizing(border-box);
+        }
       }
       h2{
         color: #212222;
@@ -89,6 +110,13 @@
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
+        @include breakpoint(max-width 600px){
+          width: 100%;
+          padding-left: 30px;
+          line-height: 16px;
+          margin-bottom: 20px;
+          @include box-sizing(border-box);
+        }
       }
       p{
         font-weight: 400;
@@ -96,6 +124,15 @@
         font-size: 15px;
         margin:0;
         margin-bottom: 40px;
+        @include breakpoint(max-width 600px){
+          display: block;
+          position: relative;
+          float: left;
+          width: 100%;
+          padding-left: 30px;
+          margin-bottom: 5px;
+          @include box-sizing(border-box);
+        }
       }
       table tr td{
         margin-right: 35px;
